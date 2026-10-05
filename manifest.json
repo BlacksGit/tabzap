@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "TabZap - Close Duplicate Tabs",
+  "version": "1.0.0",
+  "description": "One click closes duplicate tabs in the current window and keeps the oldest of each. Shows how many it closed.",
+  "permissions": [
+    "tabs"
+  ],
+  "action": {
+    "default_title": "Close duplicate tabs",
+    "default_icon": {
+      "16": "icons/16.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    }
+  },
+  "background": {
+    "service_worker": "bg.js",
+    "scripts": [
+      "bg.js"
+    ]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tabzap@blackspectre512",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "author": "BlackSpectre512",
+  "homepage_url": "https://github.com/BlacksGit/tabzap"
+}
